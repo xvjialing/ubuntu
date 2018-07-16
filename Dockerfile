@@ -9,6 +9,7 @@ RUN apt-get update && apt-get -yqq install --no-install-recommends \
 	apt-utils \
 	curl \
 	apt-transport-https ca-certificates \
+	snapd snapcraft \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
 
