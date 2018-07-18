@@ -17,6 +17,4 @@ RUN curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN snap install conjure-up --classic && conjure-up kubernetes
-
 CMD ["/sbin/init"]
