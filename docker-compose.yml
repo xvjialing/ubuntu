@@ -8,8 +8,8 @@ services:
     image: registry.cn-hangzhou.aliyuncs.com/lytechxjl/ubuntu
     container_name: ubuntu2
     privileged: true
-  ubuntu3: 
-    image: registry.cn-hangzhou.aliyuncs.com/lytechxjl/ubuntu
-    container_name: ubuntu3
-    privileged: true
+  # ubuntu3: 
+  #   image: registry.cn-hangzhou.aliyuncs.com/lytechxjl/ubuntu
+  #   container_name: ubuntu3
+  #   privileged: true
 
