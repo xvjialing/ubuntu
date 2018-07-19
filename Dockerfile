@@ -13,7 +13,7 @@ RUN apt-get update && apt-get -yqq install --no-install-recommends \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN curl -fsSL https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_17.03.0~ce-0~ubuntu-xenial_amd64.deb \
+RUN curl https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_17.03.0~ce-0~ubuntu-xenial_amd64.deb \
 	-o docker-ce_17.03.0~ce-0~ubuntu-xenial_amd64.deb && dpkg -i docker-ce_17.03.0~ce-0~ubuntu-xenial_amd64.deb \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
